@@ -2,25 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>API Hack Capstonet</title>
+    <meta name="viewport" content="width=device-width" scale="1">
+    <title>Couch Companion</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Welcome to Couch Companion</h1>
-    <p>Just type in a movie, and we'll send you movies we think you'll like, too!</p>
-    <div class="input">
+    <div class="center">
+      <h1>Couch Companion</h1>
+      <p class="home-screen">Just type in a movie, and we'll send you movies we think you'll like, too!</p>
+      <div class="input">
         <form id="select-movie" action="#" class="js-search-form">
-          <label for ="query">Movie</label>
           <input type="text" id="movie" class="js-query" placeholder="e.g. Jaws" required/>
           <div class="button">
             <input type="submit" value="Let's Go!"/>
           </div>
         </form>
+      </div>
     </div>
-    <main role="main" id="main" class="js-search-results hidden">
-      <p class="result-list"></p>
+    
+       
+   <main role="main" id="main" class="js-search-results hidden">
+    <p class="result-list"></p>
     </main>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>

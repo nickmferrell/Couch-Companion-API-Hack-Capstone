@@ -11,7 +11,7 @@ function display(responseJson) {
 
   // you need to loop through the items responseJson.Results and build a list of <li>'s
   //console.log(responseJson.Similar.Results);
-
+// add back to line 26 if need <br>${uiList[i].wTeaser}
   const uiList = responseJson.Similar.Results.map((item) => {
       console.log(item.Name);
       return item
@@ -20,11 +20,11 @@ function display(responseJson) {
   for (let i = 0; i < uiList.length; i++) {
     $('.result-list').append(`
     <ul class="list-unstyled">
-    <fieldset>
+  
     <li><iframe width="auto" height="auto"
 src="${uiList[i].yUrl}">
-</iframe><br><a href="${uiList[i].wUrl}">${uiList[i].Name}</a><br>${uiList[i].wTeaser}</li>
-</fieldset>
+</iframe><br><a href="${uiList[i].wUrl}" target="_blank">${uiList[i].Name}</a></li>
+
 </ul>`)
   }
   
