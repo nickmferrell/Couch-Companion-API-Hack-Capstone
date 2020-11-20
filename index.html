@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" scale="1">
@@ -7,18 +7,19 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="center">
-      <h1>Couch Companion</h1>
-      <p class="home-screen">Just type in a movie, and we'll send you movies we think you'll like, too!</p>
-      <div class="input">
-        <form id="select-movie" action="#" class="js-search-form">
-          <input type="text" id="movie" class="js-query" placeholder="e.g. Jaws" required/>
-          <div class="button">
-            <input type="submit" value="Let's Go!"/>
-          </div>
-        </form>
+    <section class="container">
+      <div class="center">
+        <h1>Couch Companion</h1>
+        <p class="home-screen">Just type in a movie, and we'll send you movies we think you'll like, too!</p>
+          <form id="select-movie" action="#" class="js-search-form">
+            <label for="movie" class="movie-label">Movie: </label>
+            <input type="text" id="movie" class="js-query" placeholder="e.g. Jaws" required/>
+            <div class="button">
+            <input type="submit" id="button" value="Let's Go!"/>
+          </form>
+        </div>
       </div>
-    </div>
+    </section>
     
        
    <main role="main" id="main" class="js-search-results hidden">
